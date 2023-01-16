@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <title>Hrm-system</title>
+</head>
+
+<body style="background-image: linear-gradient(to right, #0A2647, #205295); margin-top: 210px; font-family: Georgia, 'Times New Roman', Times, serif"> 
+    <div class="container-lg mt-5   " style="display: flex; justify-content: center; width: 25%;">
+        <div class="card login-form" style="background-color: #B9D7EA;">
+            <div class="card-body">
+                <h1 class="card-title text-center" style="color: #0A2647;">Human resource manager system</h1>
+                <div class="card-text">
+                    <form action="../controller/controllAdmin.php" method="post">
+                        <div class="form-group mb-2">
+                            <label for="name" style="color:#0A2647;">Nome:</label>
+                            <input class="form-control  form-control-sm" type="text" name="name" id="name" placeholder="Entre com o nome de administrador">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="password" style="color: #0A2647;">Senha:</label>
+                            <input class="form-control  form-control-sm" type="password" name="password" id="password" placeholder="Entre com a senha de administrador">
+                        </div>
+                        <button type="submit" name="option" value="login" class="btn btn-md btn-success btn-block form-control mt-2 mb-2">Logar</button>
+                        <div style="color:#0A2647"> 
+                            Se não tem uma conta de administrador, <a href="./registerAdmin.html?" style="color: #EB455F; text-decoration: none;">registre-se aqui!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
